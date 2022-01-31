@@ -24,12 +24,16 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     RelativeLayout btn_addques, btn_settings, btn_addpoetry;
-    TextView tv_contacts, tv_today, tv_month, tv_total;
+    TextView tv_contacts, tv_today, tv_month, tv_total, tv_kcontacts,tv_ktoday, tv_kmonth, tv_ktotal;
     String showad;
     KProgressHUD kProgressHUD;
     int thismonthcounter = 0;
     int todayscounter = 0;
     int totalcounter = 0;
+
+    int kthismonthcounter = 0;
+    int ktodayscounter = 0;
+    int ktotalcounter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +43,12 @@ public class MainActivity extends AppCompatActivity {
         kProgressHUD.show();
         btn_addques = findViewById(R.id.btn_addques);
         tv_contacts = findViewById(R.id.tv_contacts);
+        tv_kcontacts = findViewById(R.id.tv_kcontacts);
         tv_today = findViewById(R.id.tv_today);
+        tv_ktoday = findViewById(R.id.tv_ktoday);
+        tv_ktotal = findViewById(R.id.tv_ktotal);
         tv_total = findViewById(R.id.tv_total);
+        tv_kmonth = findViewById(R.id.tv_kmonth);
         tv_month = findViewById(R.id.tv_month);
         btn_settings = findViewById(R.id.btn_settings);
         btn_addpoetry = findViewById(R.id.btn_addpoetry);
@@ -116,6 +124,28 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        contactsreferance = FirebaseDatabase.getInstance().getReference("Kalma_Contacts");
+        contactsreferance.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()) {
+                    int countcontact = 0;
+                    for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                        JsonArray jsonArray = new JsonParser().parse(dataSnapshot.child("Contactsjson").getValue().toString()).getAsJsonArray();
+                        countcontact = countcontact + jsonArray.size();
+
+
+                    }
+                    tv_kcontacts.setText(countcontact + "");
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 
     public void initProgressDialog() {
@@ -169,8 +199,41 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
+        dataabaseReference = FirebaseDatabase.getInstance().getReference("Kalma_Contacts");
+        dataabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()) {
+
+                    for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                        String[] date = dataSnapshot.child("date").getValue(String.class).split("-");
+                        if (date[1].equals(splictCurrentDate[1])) {
+                            kthismonthcounter = kthismonthcounter + 1;
+
+
+                        }
+                        if (dataSnapshot.child("date").getValue(String.class).equals(new MyHelperClass().getCurrentDateYYYYMMDD_Dashes())) {
+                            ktodayscounter = ktodayscounter + 1;
+
+
+                        }
+                        ktotalcounter = ktotalcounter + 1;
+
+                    }
+                    tv_ktoday.setText(ktodayscounter + "");
+                    tv_kmonth.setText(kthismonthcounter + "");
+                    tv_ktotal.setText(ktotalcounter + "");
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
+
     }
+
 }

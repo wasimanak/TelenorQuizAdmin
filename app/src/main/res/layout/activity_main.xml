@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_gravity="center_horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="1"
+                    android:text="..."
                     android:textColor="@android:color/holo_blue_bright"
                     android:textSize="@dimen/_20ssp" />
 
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="@android:color/holo_blue_bright"
-                android:text="Today's" />
+                android:text="Active User" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="2"
+                    android:text="..."
                     android:textColor="@android:color/holo_orange_dark"
                     android:textSize="@dimen/_20ssp" />
 
@@ -98,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="3"
+                    android:text="..."
                     android:textColor="@android:color/holo_green_light"
                     android:textSize="@dimen/_20ssp" />
 
@@ -118,7 +118,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_gravity="center_horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -138,7 +138,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="4"
+                    android:text="..."
                     android:textColor="@android:color/holo_blue_bright"
                     android:textSize="@dimen/_15ssp" />
 
@@ -150,12 +150,56 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="Con" />
+                android:text="T Contacts" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/blue_circle">
+
+                <TextView
+                    android:id="@+id/tv_ktoday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="..."
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:textSize="@dimen/_20ssp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_bright"
+                android:text="Active User" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
             android:layout_marginLeft="@dimen/_30sdp"
             android:orientation="vertical">
 
@@ -166,13 +210,12 @@
                 android:background="@drawable/oragne_circle">
 
                 <TextView
-
+                    android:id="@+id/tv_kmonth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="12"
+                    android:text="..."
                     android:textColor="@android:color/holo_orange_dark"
                     android:textSize="@dimen/_20ssp" />
 
@@ -183,6 +226,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/holo_orange_dark"
                 android:text="This Month Users" />
         </LinearLayout>
 
@@ -191,7 +235,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:visibility="gone"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -201,13 +244,12 @@
                 android:background="@drawable/green_circle">
 
                 <TextView
-
+                    android:id="@+id/tv_ktotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="1030"
+                    android:text="..."
                     android:textColor="@android:color/holo_green_light"
                     android:textSize="@dimen/_20ssp" />
 
@@ -217,11 +259,51 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_green_light"
                 android:text="All Users"
                 android:gravity="center"
 
                 />
         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/blue_circle">
+
+                <TextView
+                    android:id="@+id/tv_kcontacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="..."
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:textSize="@dimen/_15ssp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_bright"
+                android:gravity="center"
+                android:text="K Contacts" />
+        </LinearLayout>
+
     </LinearLayout>
 
 
@@ -229,7 +311,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/black"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         />
 
     <LinearLayout

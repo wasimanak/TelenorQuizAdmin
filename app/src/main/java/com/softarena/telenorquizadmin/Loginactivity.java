@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -19,7 +20,7 @@ import com.kaopiz.kprogresshud.KProgressHUD;
 
 public class Loginactivity extends AppCompatActivity {
 EditText username,password;
-Button btn_login;
+ImageView btn_login;
 KProgressHUD kProgressHUD;
 
 

@@ -21,7 +21,13 @@
         </activity>
         <activity android:name=".SettingsActivity" />
         <activity android:name=".AddQuestionsActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity">
+
+
+        </activity>
+
+
+
     </application>
 
 </manifest>
