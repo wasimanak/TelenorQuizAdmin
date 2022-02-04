@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getAnalytic() {
 //         getting user by date
-        String currentDate = new MyHelperClass().getCurrentDateYYYYMMDD_Dashes();
+        String currentDate = new MyHelperClass().getCurrentDateYYYYMMDDhhmmsss();
         String splictCurrentDate[] = currentDate.split("-");
 
         List<Integer> thismonthuser;
@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                         }
-                        if (dataSnapshot.child("date").getValue(String.class).equals(new MyHelperClass().getCurrentDateYYYYMMDD_Dashes())) {
+                        if (dataSnapshot.child("date").getValue(String.class).equals(new MyHelperClass().getCurrentDateYYYYMMDDhhmmsss())) {
                             todayscounter = todayscounter + 1;
 
 
@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                         }
-                        if (dataSnapshot.child("date").getValue(String.class).equals(new MyHelperClass().getCurrentDateYYYYMMDD_Dashes())) {
+                        if (dataSnapshot.child("date").getValue(String.class).equals(new MyHelperClass().getCurrentDateYYYYMMDDhhmmsss())) {
                             ktodayscounter = ktodayscounter + 1;
 
 
