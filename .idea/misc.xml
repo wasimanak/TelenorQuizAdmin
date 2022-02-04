@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Projects/TelenorQuizAdmin/app/src/main/res/drawable-v24/ic_baseline_arrow_back_24.xml" value="0.35" />
         <entry key="..\:/Android Projects/TelenorQuizAdmin/app/src/main/res/drawable/blue_circle.xml" value="0.3638888888888889" />
         <entry key="..\:/Android Projects/TelenorQuizAdmin/app/src/main/res/drawable/cornercard.xml" value="0.21770833333333334" />
         <entry key="..\:/Android Projects/TelenorQuizAdmin/app/src/main/res/drawable/etbg.xml" value="0.36018518518518516" />
@@ -14,6 +15,7 @@
         <entry key="..\:/Android Projects/TelenorQuizAdmin/app/src/main/res/layout/activity_loginactivity.xml" value="0.36096014492753625" />
         <entry key="..\:/Android Projects/TelenorQuizAdmin/app/src/main/res/layout/activity_main.xml" value="0.36096014492753625" />
         <entry key="..\:/Android Projects/TelenorQuizAdmin/app/src/main/res/layout/activity_poetry.xml" value="0.33559782608695654" />
+        <entry key="..\:/Android Projects/TelenorQuizAdmin/app/src/main/res/layout/activity_send_notification.xml" value="0.35280797101449274" />
         <entry key="..\:/Android Projects/TelenorQuizAdmin/app/src/main/res/layout/activity_settings.xml" value="0.36231884057971014" />
         <entry key="..\:/Android Projects/TelenorQuizAdmin/app/src/main/res/layout/header.xml" value="0.36231884057971014" />
       </map>
