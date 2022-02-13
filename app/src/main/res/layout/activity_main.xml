@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_1sdp"
         android:layout_gravity="center_horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
             <RelativeLayout
 
                 android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_60sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/blue_circle">
 
@@ -54,7 +54,7 @@
 
             <RelativeLayout
                 android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_60sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/oragne_circle">
 
@@ -88,7 +88,7 @@
 
             <RelativeLayout
                 android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_60sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/green_circle">
 
@@ -128,7 +128,7 @@
             <RelativeLayout
 
                 android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_60sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/blue_circle">
 
@@ -150,7 +150,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/holo_blue_bright"
                 android:gravity="center"
-                android:text="T Contacts" />
+                android:text="P Contacts" />
         </LinearLayout>
 
     </LinearLayout>
@@ -163,7 +163,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_1sdp"
         android:layout_gravity="center_horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -173,7 +173,7 @@
             <RelativeLayout
 
                 android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_60sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/blue_circle">
 
@@ -205,7 +205,7 @@
 
             <RelativeLayout
                 android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_60sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/oragne_circle">
 
@@ -239,7 +239,7 @@
 
             <RelativeLayout
                 android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_60sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/green_circle">
 
@@ -279,7 +279,7 @@
             <RelativeLayout
 
                 android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_60sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/blue_circle">
 
@@ -317,7 +317,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="146dp"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:orientation="horizontal"
         android:weightSum="3">
 
@@ -329,7 +329,7 @@
         <RelativeLayout
             android:id="@+id/btn_addques"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"
             android:layout_weight="1"
             android:background="@drawable/cornercard">
 
@@ -362,7 +362,7 @@
         <RelativeLayout
             android:id="@+id/btn_settings"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"
             android:layout_weight="1"
             android:background="@drawable/cornercard">
 
@@ -405,7 +405,7 @@
     <RelativeLayout
         android:id="@+id/btn_addpoetry"
         android:layout_width="129dp"
-        android:layout_height="@dimen/_100sdp"
+        android:layout_height="@dimen/_80sdp"
         android:layout_marginLeft="@dimen/_35sdp"
         android:background="@drawable/cornercard">
 

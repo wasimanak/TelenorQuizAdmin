@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Loginactivity"
-    android:background="#feb209">
+    android:background="@color/yellow">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="57dp"
                     android:text="Email or Username"
-                    android:textColor="#c2c2c2"
+                    android:textColor="#030303"
                     android:textSize="15sp">
                 </TextView>
 
