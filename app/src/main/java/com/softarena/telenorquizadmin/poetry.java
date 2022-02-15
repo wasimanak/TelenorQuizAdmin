@@ -59,7 +59,7 @@ public class poetry extends AppCompatActivity {
                 mapq1.put("poetry",ptry.getText().toString());
 
                 map.put("poetry", mapq1);
-
+                mapq1.put("date", new MyHelperClass().getCurrentDateYYYYMMDDhhmmsss());
 
 
                 reference.setValue(mapq1);
@@ -89,12 +89,12 @@ public class poetry extends AppCompatActivity {
 
 
                 String key = reference.push().getKey();
-
                 Map<String, Object> map = new Hashtable<>();
+
                 Map<String, Object> mapq1 = new Hashtable<>();
                 reference.child(key).setValue(map);
                 mapq1.put("poetry",ptry.getText().toString());
-
+                mapq1.put("date", new MyHelperClass().getCurrentDateYYYYMMDDhhmmsss());
 
 
 

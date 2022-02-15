@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -19,7 +20,11 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;
 import com.kaopiz.kprogresshud.KProgressHUD;
 
+import java.text.BreakIterator;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         btn_addpoetry = findViewById(R.id.btn_addpoetry);
         getAnalytic();
         getDataFromDB();
+
         btn_addques.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,7 +81,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+       
     }
+
 
     public void getDataFromDB() {
 
